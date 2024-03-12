@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita de Rosquinhas</title>
+    <style>
+        body {     
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        h1, h2, h3 {
+            color: #ababab;
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ddd;
+            transition: color 0.3s;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover {
+            color: yellow;
+        }
+        p {
+            text-align: center;
+        }
+        .rosquinha-img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color:#ababab;;
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+        <h1>Receita de Rosquinhas</h1>
+        <nav>
+            <a href="#ingredients">Ingredientes</a>
+            <a href="#preparation">Modo de Preparo</a>
+            <a href="#reviews">Avaliações</a>
+        </nav>
+    </header>
+    <section id="ingredients">
+        <h2>Ingredientes:</h2>
+        <ul>
+            <li>2 xícaras de farinha de trigo</li>
+            <li>1/2 xícara de açúcar</li>
+            <li>1 colher de chá de fermento em pó</li>
+            <li>1/4 colher de chá de sal</li>
+            <li>1 ovo</li>
+            <li>1/2 xícara de leite</li>
+            <li>2 colheres de sopa de manteiga derretida</li>
+            <li>1 colher de chá de essência de baunilha</li>
+        </ul>
+    </section>
+    <section id="preparation">
+        <h2>Modo de Preparo:</h2>
+        <ol>
+            <li>Pré-aqueça o forno a 180°C e unte uma assadeira.</li>
+            <li>Em uma tigela grande, misture a farinha, o açúcar, o fermento e o sal.</li>
+            <li>Em outra tigela, bata o ovo e adicione o leite, a manteiga derretida e a essência de baunilha.</li>
+            <li>Adicione os ingredientes líquidos aos ingredientes secos e misture até formar uma massa homogênea.</li>
+            <li>Modele a massa em formato de rosquinhas e coloque na assadeira preparada.</li>
+            <li>Asse no forno pré-aquecido por 12-15 minutos, ou até que as rosquinhas estejam douradas.</li>
+            <li>Deixe esfriar antes de servir.</li>
+        </ol>
+    </section>
+    <img class="rosquinha-img" src="Rosquinhas.png" alt="Rosquinhas">
+    <section id="reviews">
+        <h2>Avaliações:</h2>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+        </div>
+        <p>Deixe sua avaliação sobre essa receita.</p>
+    </section>
+</body>
+</html>
